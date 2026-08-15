@@ -1,6 +1,1332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nihonowa | Learn Japan. Meet Japanese People.</title>
+
+<meta name="description"
+content="Learn Japanese, Japanese culture, school subjects and more directly from Japanese people. Join Nihonowa online from home.">
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    color: #222;
+    line-height: 1.8;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ja {
+    display: block;
+    color: #777;
+    font-size: 0.55em;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    text-align: center;
+
+    padding: 75px 20px 70px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff8ef,
+            #ffffff
+        );
+}
+
+.logo {
+
+    font-size: 46px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.04em;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+
+    font-size:
+        clamp(34px, 6vw, 55px);
+
+    line-height: 1.3;
+
+    margin: 0 0 20px;
+}
+
+.hero-text {
+
+    max-width: 760px;
+
+    margin:
+        25px auto 32px;
+
+    color: #555;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    border-radius: 999px;
+
+    background: #222;
+
+    color: #fff;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 70px 22px;
+}
+
+.title {
+
+    text-align: center;
+
+    margin-bottom: 42px;
+}
+
+.title h2 {
+
+    font-size: 31px;
+
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+.title .ja {
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+
+    padding: 28px;
+
+    border:
+        1px solid #e5e5e5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.05);
+
+    background: #fff;
+}
+
+.card h3 {
+
+    margin:
+        0 0 5px;
+
+    font-size: 21px;
+}
+
+.card .ja {
+
+    font-size: 14px;
+}
+
+.card p {
+
+    color: #555;
+}
+
+
+/* =========================
+   ONLINE LESSON
+========================= */
+
+.band {
+
+    background: #faf7f2;
+
+    max-width: none;
+}
+
+.band-inner {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 0 22px;
+}
+
+.two {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 24px;
+}
+
+.panel {
+
+    padding: 30px;
+
+    border:
+        1px solid #e5e5e5;
+
+    border-radius: 18px;
+
+    background: #fff;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.04);
+}
+
+.panel h3 {
+
+    font-size: 23px;
+
+    margin:
+        0 0 4px;
+}
+
+.panel .ja {
+
+    font-size: 14px;
+}
+
+.panel p {
+
+    color: #555;
+}
+
+
+/* =========================
+   SUBJECTS
+========================= */
+
+.subjects {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.subject {
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    background: #f7f7f7;
+
+    text-align: center;
+
+    font-weight: 700;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   TEAMS
+========================= */
+
+.teams {
+
+    background: #f7f9fc;
+
+    max-width: none;
+}
+
+.teams-inner {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 0 22px;
+}
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.step {
+
+    background: #fff;
+
+    padding: 25px 18px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    border:
+        1px solid #e5e5e5;
+}
+
+.number {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   PRIVACY
+========================= */
+
+.privacy {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 32px;
+
+    border:
+        1px solid #e5e5e5;
+
+    border-radius: 18px;
+
+    background: #fff;
+}
+
+.privacy ul {
+
+    padding-left: 22px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+    text-align: center;
+
+    padding: 75px 20px;
+
+    background: #222;
+
+    color: #fff;
+}
+
+.cta h2 {
+
+    font-size: 34px;
+
+    margin:
+        0 0 10px;
+}
+
+.cta .ja {
+
+    color: #ccc;
+}
+
+.cta p {
+
+    max-width: 720px;
+
+    margin:
+        20px auto 30px;
+
+    color: #ddd;
+}
+
+.cta .btn {
+
+    background: #fff;
+
+    color: #222;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 28px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .logo {
+
+        font-size: 40px;
+    }
+
+    .cards,
+    .two,
+    .subjects,
+    .steps {
+
+        grid-template-columns: 1fr;
+    }
+
+    section {
+
+        padding: 55px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="logo">
+        Nihonowa
+    </div>
+
+
+    <h1>
+
+        Meet Japan.
+        Meet Japanese People.
+
+        <span class="ja">
+            日本とつながろう。日本人と話そう。
+        </span>
+
+    </h1>
+
+
+    <p class="hero-text">
+
+        Learn Japanese, Japanese culture,
+        school subjects, hobbies and more
+        directly from Japanese people.
+
+        <span class="ja">
+
+            日本語、日本文化、学校の勉強、
+            趣味などを日本人から直接学べます。
+
+        </span>
+
+    </p>
+
+
+    <div class="buttons">
+
+        <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeqQpe58TSrvQfqUJ_CpMyrtKSm5Os8vE0gr_3D8LAKtLIz5g/viewform?usp=publish-editor"
+        >
+
+            Join Nihonowa
+
+            <br>
+
+            <small>
+                生徒として参加する
+            </small>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     WHAT CAN YOU LEARN?
+========================= -->
+
+<section>
+
+    <div class="title">
+
+        <h2>
+            What Can You Learn?
+        </h2>
+
+        <span class="ja">
+            いろいろなことを学べます
+        </span>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <h3>
+                🇯🇵 Japanese
+            </h3>
+
+            <span class="ja">
+                日本語
+            </span>
+
+            <p>
+
+                Learn Japanese conversation,
+                reading, writing and everyday expressions.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                📚 School Subjects
+            </h3>
+
+            <span class="ja">
+                学校の勉強
+            </span>
+
+            <p>
+
+                Learn mathematics,
+                science, social studies,
+                music and other subjects.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                🌸 Japanese Culture
+            </h3>
+
+            <span class="ja">
+                日本文化
+            </span>
+
+            <p>
+
+                Discover Japanese food,
+                history, travel, traditions
+                and everyday life.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SUBJECTS
+========================= -->
+
+<section class="band">
+
+    <div class="band-inner">
+
+        <div class="title">
+
+            <h2>
+                Choose What You Want to Learn
+            </h2>
+
+            <span class="ja">
+                学びたいことを選べます
+            </span>
+
+        </div>
+
+
+        <div class="subjects">
+
+
+            <div class="subject">
+                🗣️ Japanese
+                <span class="ja">
+                    日本語
+                </span>
+            </div>
+
+
+            <div class="subject">
+                ➕ Mathematics
+                <span class="ja">
+                    算数・数学
+                </span>
+            </div>
+
+
+            <div class="subject">
+                📖 Japanese Language
+                <span class="ja">
+                    国語
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🔬 Science
+                <span class="ja">
+                    理科
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🌏 Social Studies
+                <span class="ja">
+                    社会
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🎵 Music & Arts
+                <span class="ja">
+                    音楽・芸術
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🍳 Japanese Food
+                <span class="ja">
+                    日本料理
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🏯 History & Culture
+                <span class="ja">
+                    歴史・文化
+                </span>
+            </div>
+
+
+            <div class="subject">
+                🎨 Hobbies & Skills
+                <span class="ja">
+                    趣味・特技
+                </span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ONLINE LESSON
+========================= -->
+
+<section>
+
+    <div class="title">
+
+        <h2>
+            Join from Home
+        </h2>
+
+        <span class="ja">
+            自宅から参加できます
+        </span>
+
+    </div>
+
+
+    <div class="two">
+
+
+        <div class="panel">
+
+            <h3>
+                🏠 Completely Online
+            </h3>
+
+            <span class="ja">
+                完全オンライン
+            </span>
+
+            <p>
+
+                You can join Nihonowa
+                from your home.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="panel">
+
+            <h3>
+                🌎 Connect with Japan
+            </h3>
+
+            <span class="ja">
+                日本とつながる
+            </span>
+
+            <p>
+
+                Talk with Japanese people
+                and learn directly from them.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TEAMS
+========================= -->
+
+<section class="teams">
+
+    <div class="teams-inner">
+
+        <div class="title">
+
+            <h2>
+                How Online Lessons Work
+            </h2>
+
+            <span class="ja">
+                オンライン授業の基本的な方法
+            </span>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <strong>
+                    Join Teams
+                </strong>
+
+                <span class="ja">
+                    Teamsに参加
+                </span>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <strong>
+                    Camera OFF
+                </strong>
+
+                <span class="ja">
+                    カメラOFF
+                </span>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <strong>
+                    Ask by Chat
+                </strong>
+
+                <span class="ja">
+                    チャットで質問
+                </span>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <strong>
+                    Learn & Enjoy
+                </strong>
+
+                <span class="ja">
+                    楽しく学ぶ
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div
+            class="privacy"
+            style="margin-top:30px;"
+        >
+
+            <h3>
+                🔒 You don't have to show your face
+            </h3>
+
+            <span class="ja">
+                顔を出さなくても参加できます
+            </span>
+
+
+            <p>
+
+                Students normally join with
+                their camera and microphone OFF.
+
+            </p>
+
+
+            <p>
+
+                You can ask questions through
+                Teams chat.
+
+                Translation features can help
+                when communicating with your teacher.
+
+            </p>
+
+
+            <p>
+
+                If necessary, you may turn
+                your microphone ON to speak
+                with your teacher.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     LANGUAGE SUPPORT
+========================= -->
+
+<section>
+
+    <div class="title">
+
+        <h2>
+            Don't Speak Japanese Yet?
+        </h2>
+
+        <span class="ja">
+            まだ日本語が話せなくても大丈夫です
+        </span>
+
+    </div>
+
+
+    <div class="panel">
+
+        <p>
+
+            You do not need to speak Japanese
+            fluently to join Nihonowa.
+
+        </p>
+
+
+        <p>
+
+            Teams translation features can help
+            you communicate with your teacher.
+
+        </p>
+
+
+        <p>
+
+            You can start learning Japanese
+            while communicating with Japanese people.
+
+        </p>
+
+
+        <p class="ja">
+
+            日本語がまだ分からなくても参加できます。
+            Teamsの翻訳機能を利用して、
+            先生とのコミュニケーションを
+            サポートします。
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MINORS / PARENTS
+========================= -->
+
+<section class="band">
+
+    <div class="band-inner">
+
+        <div class="title">
+
+            <h2>
+                For Students Under 18
+            </h2>
+
+            <span class="ja">
+                18歳未満の生徒について
+            </span>
+
+        </div>
+
+
+        <div class="privacy">
+
+            <p>
+
+                If you are under 18,
+                we require consent from
+                your parent or legal guardian
+                before you participate.
+
+            </p>
+
+
+            <p>
+
+                A parent or legal guardian
+                will be asked to confirm
+                their consent through
+                our registration process.
+
+            </p>
+
+
+            <p class="ja">
+
+                18歳未満の生徒が参加する場合は、
+                保護者または法定代理人の同意を
+                取得します。
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     YOUTUBE
+========================= -->
+
+<section>
+
+    <div class="title">
+
+        <h2>
+            About Recorded Lessons
+        </h2>
+
+        <span class="ja">
+            授業の録画について
+        </span>
+
+    </div>
+
+
+    <div class="privacy">
+
+        <p>
+
+            Nihonowa may create educational
+            videos from some lessons in the future.
+
+        </p>
+
+
+        <p>
+
+            Students' faces and voices
+            will not normally be included
+            in public videos.
+
+        </p>
+
+
+        <p>
+
+            If a student's image or voice
+            is ever intended to be used publicly,
+            separate consent will be requested.
+
+        </p>
+
+
+        <p class="ja">
+
+            将来的に授業の一部を
+            教育用動画として利用する場合があります。
+
+            生徒の顔や声は、基本的に
+            公開動画には含めない方針です。
+
+            生徒の映像や音声を公開する場合は、
+            別途同意を確認します。
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     REGISTER
+========================= -->
+
+<section id="register">
+
+    <div class="title">
+
+        <h2>
+            Ready to Join?
+        </h2>
+
+        <span class="ja">
+            参加してみませんか？
+        </span>
+
+    </div>
+
+
+    <div
+        class="panel"
+        style="text-align:center;"
+    >
+
+        <p>
+
+            Tell us what you would like
+            to learn and what kind of
+            Japanese experience you are looking for.
+
+        </p>
+
+
+        <p class="ja">
+
+            学びたいことや、
+            日本で知りたいことを
+            教えてください。
+
+        </p>
+
+
+        <!--
+        =================================
+        ここを生徒用Google FormのURLに変更
+        =================================
+        -->
+
+        <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeqQpe58TSrvQfqUJ_CpMyrtKSm5Os8vE0gr_3D8LAKtLIz5g/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener"
+        >
+
+            Student Registration
+
+            <br>
+
+            <small>
+                生徒登録フォーム
+            </small>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<div class="cta">
+
+    <h2>
+        Meet Japan. Meet Japanese People.
+    </h2>
+
+    <span class="ja">
+        日本とつながろう。日本人と話そう。
+    </span>
+
+
+    <p>
+
+        Learn from home.
+        Connect with Japan.
+        Discover something new.
+
+    </p>
+
+
+    <div class="buttons">
+
+        <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeqQpe58TSrvQfqUJ_CpMyrtKSm5Os8vE0gr_3D8LAKtLIz5g/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener"
+        >
+
+            Join Nihonowa
+
+            <br>
+
+            <small>
+                生徒として参加する
+            </small>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    © Nihonowa
+
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nihonowa | Learn Japanese and Discover Japan</title>

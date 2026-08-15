@@ -3,192 +3,869 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nihonowa | 先生募集</title>
 
-<meta name="description" content="あなたの知識や経験を、世界の人に伝えてみませんか？Nihonowaでは日本語や日本文化、趣味などを教えてくれる先生を募集しています。">
+<title>Nihonowa | 日本人の先生を募集しています</title>
+
+<meta name="description"
+content="Nihonowaでは、日本語、日本の学校科目、日本文化、趣味や特技などを海外の生徒に教えてくれる日本人の先生を募集しています。完全オンライン・在宅で参加できます。">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:#222;line-height:1.8;background:#fff}
-a{text-decoration:none;color:inherit}
-.hero{padding:82px 22px 72px;text-align:center;background:linear-gradient(180deg,#fff8ef,#fff)}
-.logo{font-size:40px;font-weight:800;letter-spacing:.04em;margin-bottom:28px}
-.hero h1{max-width:850px;margin:0 auto 22px;font-size:clamp(30px,5vw,52px);line-height:1.35}
-.hero p{max-width:720px;margin:0 auto 30px;font-size:18px;color:#555}
-.btn{display:inline-block;padding:14px 30px;border-radius:999px;background:#222;color:#fff;font-weight:700}
-section{max-width:1050px;margin:auto;padding:70px 22px}
-.title{text-align:center;margin-bottom:42px}
-.title h2{font-size:31px;margin:0 0 8px}
-.title p{margin:0;color:#666}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{padding:28px;border:1px solid #e5e5e5;border-radius:18px;box-shadow:0 5px 20px rgba(0,0,0,.05)}
-.card h3{margin-top:0;font-size:20px}
-.card p{color:#555;margin-bottom:0}
-.topics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.topic{padding:22px 14px;text-align:center;background:#f7f7f7;border-radius:16px;font-weight:700}
-.flow{max-width:760px;margin:auto}
-.flow div{padding:20px 24px;margin-bottom:12px;background:#f7f7f7;border-radius:14px}
-.flow strong{display:block;margin-bottom:4px}
-.money{background:#faf7f2;max-width:none}
-.money-inner{max-width:1050px;margin:auto}
-.highlight{font-size:28px;font-weight:800;text-align:center;margin:30px 0}
-.note{max-width:800px;margin:30px auto 0;padding:20px 24px;background:#f7f7f7;border-left:4px solid #222}
-.cta{padding:78px 22px;text-align:center;background:#222;color:#fff}
-.cta h2{font-size:32px}
-.cta p{max-width:680px;margin:0 auto 28px;color:#ddd}
-.cta .btn{background:#fff;color:#222}
-footer{text-align:center;padding:28px;color:#777;font-size:13px}
-@media(max-width:800px){.cards,.topics{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.cards,.topics{grid-template-columns:1fr}.hero{padding-top:55px}}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Arial,
+        sans-serif;
+    color: #222;
+    line-height: 1.8;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.en {
+    display: block;
+    color: #777;
+    font-size: 0.55em;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 75px 20px 70px;
+    background: linear-gradient(180deg, #fff8ef, #ffffff);
+}
+
+.logo {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(34px, 6vw, 55px);
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.hero-text {
+    max-width: 760px;
+    margin: 25px auto 32px;
+    color: #555;
+    font-size: 18px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 32px;
+    border-radius: 999px;
+    background: #222;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 70px 22px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.title h2 {
+    font-size: 31px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.title .en {
+    font-size: 16px;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    background: #fff;
+}
+
+.card h3 {
+    margin: 0 0 5px;
+    font-size: 21px;
+}
+
+.card .en {
+    font-size: 14px;
+}
+
+.card p {
+    color: #555;
+}
+
+
+/* =========================
+   ONLINE
+========================= */
+
+.band {
+    background: #faf7f2;
+    max-width: none;
+}
+
+.band-inner {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 22px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.panel {
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.panel h3 {
+    font-size: 23px;
+    margin: 0 0 4px;
+}
+
+.panel .en {
+    font-size: 14px;
+}
+
+.panel p {
+    color: #555;
+}
+
+
+/* =========================
+   SUBJECTS
+========================= */
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.subject {
+    padding: 20px;
+    border-radius: 15px;
+    background: #f7f7f7;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MATERIALS
+========================= */
+
+.material {
+    background: #f7f9fc;
+    max-width: none;
+}
+
+.material-inner {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 22px;
+}
+
+.material-box {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #e5e5e5;
+}
+
+.material-box ul {
+    padding-left: 22px;
+}
+
+
+/* =========================
+   YOUTUBE
+========================= */
+
+.youtube-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 32px;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+    padding: 75px 20px;
+    background: #222;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.cta .en {
+    color: #ccc;
+}
+
+.cta p {
+    max-width: 720px;
+    margin: 20px auto 30px;
+    color: #ddd;
+}
+
+.cta .btn {
+    background: #fff;
+    color: #222;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 28px;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .cards,
+    .two,
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 20px;
+    }
+
+}
+
 </style>
 </head>
+
+
 <body>
 
-<header class="hero">
-  <div class="logo">Nihonowa</div>
-  <h1>あなたの知識や経験を、<br>世界の人に伝えてみませんか？</h1>
-  <p>
-    日本語だけではありません。料理、将棋、盆栽、ゴルフ、歴史、旅行、
-    昔の日本の暮らしなど、あなたが知っていることを世界の人と分かち合う場所です。<br>
-<br>
-    「完全オンライン・在宅で参加できます」<br>
 
-  </p>
-  <!-- Google Form URLに変更 -->
-  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor">先生として参加する</a>
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="logo">
+        Nihonowa
+    </div>
+
+    <h1>
+
+        日本を、世界に伝えてみませんか？
+
+        <span class="en">
+            Share Japan with the World.
+        </span>
+
+    </h1>
+
+
+    <p class="hero-text">
+
+        Nihonowaでは、
+        海外の生徒に日本語や日本の知識、
+        文化、趣味などを教えてくれる
+        日本人の先生を募集しています。
+
+        <span class="en">
+
+            Nihonowa is looking for Japanese teachers
+            and people who can share their knowledge,
+            culture and skills with students around the world.
+
+        </span>
+
+    </p>
+
+
+    <div class="buttons">
+
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor"">
+
+            先生として登録する
+
+            <br>
+
+            <small>
+                Become a Teacher
+            </small>
+
+        </a>
+
+    </div>
+
 </header>
 
-<section>
-  <div class="title">
-    <h2>Nihonowaとは？</h2>
-    <p>日本人と世界の人をつなぐ、新しいオンラインコミュニティです。</p>
-  </div>
 
-  <div class="cards">
-    <div class="card">
-      <h3>日本語を教える</h3>
-      <p>日本語を学びたい海外の方と、会話を楽しみながら日本語を教えます。</p>
-    </div>
-    <div class="card">
-      <h3>日本文化を伝える</h3>
-      <p>料理、歴史、昔の暮らしなど、日本人だからこそ話せることを世界に伝えます。</p>
-    </div>
-    <div class="card">
-      <h3>趣味を教える</h3>
-      <p>将棋、盆栽、ゴルフ、手芸など、あなたの得意なことがそのまま講座になります。</p>
-    </div>
-  </div>
-</section>
+
+<!-- =========================
+     WHY NIHONOWA
+========================= -->
 
 <section>
-  <div class="title">
-    <h2>こんなことを教えてください</h2>
-    <p>専門家でなくても大丈夫です。あなたの経験そのものが教材になります。</p>
-  </div>
 
-  <div class="topics">
-    <div class="topic">🇯🇵 日本語</div>
-    <div class="topic">🍳 料理</div>
-    <div class="topic">🌳 盆栽</div>
-    <div class="topic">将棋</div>
-    <div class="topic">⛳ ゴルフ</div>
-    <div class="topic">📖 日本の歴史</div>
-    <div class="topic">✈️ 旅行</div>
-    <div class="topic">🎨 趣味・特技</div>
-  </div>
-</section>
-
-<section>
-  <div class="title">
-    <h2>先生になるまで</h2>
-  </div>
-
-  <div class="flow">
-    <div><strong>STEP 1　登録</strong>Googleフォームから、教えたいことや自己紹介を登録します。</div>
-    <div><strong>STEP 2　講座を準備</strong>テーマと内容を決めて、オンラインで講義を行います。</div>
-    <div><strong>STEP 3　教材を作る</strong>授業で扱わないポイント、演習問題、写真、動画などを加えてオリジナル教材を作ります。</div>
-    <div><strong>STEP 4　世界へ</strong>あなたの講義や教材をNihonowaから世界の生徒へ届けます。</div>
-  </div>
-</section>
-
-<section class="money">
-  <div class="money-inner">
     <div class="title">
-      <h2>教材が売れたら、先生にも収入が入ります</h2>
-      <p>Nihonowaは先生が作ったオリジナル教材を販売します。</p>
+
+        <h2>
+            Nihonowaでできること
+        </h2>
+
+        <span class="en">
+            What You Can Do at Nihonowa
+        </span>
+
     </div>
 
-    <div class="highlight">教材売上の 75% を先生へ</div>
 
     <div class="cards">
-      <div class="card">
-        <h3>先生が教材を作る</h3>
-        <p>演習問題、授業のポイント、写真、動画などを加えて、あなた独自の教材にします。</p>
-      </div>
-      <div class="card">
-        <h3>Nihonowaが販売</h3>
-        <p>先生が作った教材をNihonowaが生徒に紹介・販売します。過去の教材も購入できるようにします。</p>
-      </div>
-      <div class="card">
-        <h3>先生に75%</h3>
-        <p>教材の売上の75%を先生にお支払いします。良い教材を作るほど、長く収入につながります。</p>
-      </div>
+
+
+        <div class="card">
+
+            <h3>
+                🏠 完全オンライン・在宅
+            </h3>
+
+            <span class="en">
+                Completely Online from Home
+            </span>
+
+            <p>
+
+                ご自宅から海外の生徒と
+                オンラインで交流できます。
+
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                🌎 世界の生徒と交流
+            </h3>
+
+            <span class="en">
+                Connect with Students Around the World
+            </span>
+
+            <p>
+
+                日本に興味を持っている
+                海外の生徒に、
+                あなたの知識を伝えられます。
+
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                💡 あなたの得意を活かす
+            </h3>
+
+            <span class="en">
+                Share What You Know
+            </span>
+
+            <p>
+
+                資格や特別な経験だけでなく、
+                あなたの得意なことや趣味も
+                教えることができます。
+
+            </p>
+
+        </div>
+
+
     </div>
 
-    <div class="note">
-      <strong>教材の価格は先生が決めます。</strong><br>
-      まずは最低価格1,000円程度を想定しています。具体的な販売条件はサービス開始時にご案内します。
-    </div>
-  </div>
 </section>
+
+
+
+<!-- =========================
+     SUBJECTS
+========================= -->
+
+<section class="band">
+
+    <div class="band-inner">
+
+        <div class="title">
+
+            <h2>
+                こんなことを教えられます
+            </h2>
+
+            <span class="en">
+                What Can You Teach?
+            </span>
+
+        </div>
+
+
+        <div class="subjects">
+
+            <div class="subject">
+                🗣️ 日本語
+            </div>
+
+            <div class="subject">
+                ➕ 算数・数学
+            </div>
+
+            <div class="subject">
+                📖 国語
+            </div>
+
+            <div class="subject">
+                🔬 理科
+            </div>
+
+            <div class="subject">
+                🌏 社会
+            </div>
+
+            <div class="subject">
+                🎵 音楽
+            </div>
+
+            <div class="subject">
+                🍳 日本料理
+            </div>
+
+            <div class="subject">
+                🏯 日本文化・歴史
+            </div>
+
+            <div class="subject">
+                🎨 趣味・特技
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MATERIALS
+========================= -->
+
+<section class="material">
+
+    <div class="material-inner">
+
+        <div class="title">
+
+            <h2>
+                オリジナル教材を作ることもできます
+            </h2>
+
+            <span class="en">
+                Create Your Own Original Materials
+            </span>
+
+        </div>
+
+
+        <div class="material-box">
+
+            <p>
+
+                授業で使用するオリジナルの
+                テキストや演習問題を作成し、
+                海外の生徒に届けることができます。
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    授業用テキスト
+                </li>
+
+                <li>
+                    演習問題
+                </li>
+
+                <li>
+                    授業では扱わない補足説明
+                </li>
+
+                <li>
+                    動画などの追加教材
+                </li>
+
+                <li>
+                    過去に作った教材の販売
+                </li>
+
+            </ul>
+
+
+            <p>
+
+                Nihonowaが教材の販売を行い、
+                売上の一部を先生にお支払いする
+                仕組みを予定しています。
+
+            </p>
+
+            <p class="note">
+
+                ※教材販売の詳細な条件については、
+                登録後にご案内します。
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     YOUTUBE
+========================= -->
 
 <section>
-  <div class="title">
-    <h2>YouTubeでもあなたの講義を紹介</h2>
-    <p>希望する先生には、講義の録画・公開も予定しています。</p>
-  </div>
 
-  <div class="cards">
-    <div class="card">
-      <h3>講義を録画</h3>
-      <p>Teamsで行った講義を録画します。</p>
-    </div>
-    <div class="card">
-      <h3>YouTubeで紹介</h3>
-      <p>先生の許可を得たうえで、顔・声などを含む動画をNihonowaのYouTubeチャンネルで紹介します。</p>
-    </div>
-    <div class="card">
-      <h3>世界の人に知ってもらう</h3>
-      <p>無料動画をきっかけに、先生の講義や教材を知ってもらうことを目指します。</p>
-    </div>
-  </div>
+    <div class="title">
 
-  <div class="note">
-    動画への出演・YouTube公開は、先生の同意を得た場合のみ行います。
-  </div>
+        <h2>
+            授業をYouTubeで紹介することも
+        </h2>
+
+        <span class="en">
+            Your Lessons May Also Be Featured on YouTube
+        </span>
+
+    </div>
+
+
+    <div class="youtube-box">
+
+        <p>
+
+            Nihonowaでは、
+            先生の授業や講義の一部を録画し、
+            YouTubeなどで紹介することを
+            将来的に予定しています。
+
+        </p>
+
+
+        <p>
+
+            YouTubeへの掲載については、
+            先生ご本人の同意を確認したうえで
+            行います。
+
+        </p>
+
+
+        <p class="note">
+
+            ※YouTubeへの掲載に同意しない場合でも、
+            先生として登録・活動できます。
+
+        </p>
+
+    </div>
+
 </section>
 
-<section>
-  <div class="title">
-    <h2>まずは話を聞かせてください</h2>
-    <p>
-      「こんなことなら教えられる」というアイデアだけでも構いません。<br>
-      一緒にNihonowaを作っていきませんか？
-    </p>
-  </div>
 
-  <!-- Google Form URLに変更 -->
-  <div style="text-align:center">
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor">先生登録フォームへ</a>
-  </div>
+
+<!-- =========================
+     STUDENT SAFETY
+========================= -->
+
+<section class="band">
+
+    <div class="band-inner">
+
+        <div class="title">
+
+            <h2>
+                生徒は基本的にカメラ・マイクOFF
+            </h2>
+
+            <span class="en">
+                Students Normally Join with Camera and Microphone Off
+            </span>
+
+        </div>
+
+
+        <div class="panel">
+
+            <p>
+
+                生徒は基本的にカメラとマイクをOFFにして
+                授業に参加します。
+
+            </p>
+
+
+            <p>
+
+                分からないことはTeamsのチャットで質問し、
+                必要に応じて翻訳機能を利用できます。
+
+            </p>
+
+
+            <p>
+
+                どうしても必要な場合のみ、
+                生徒が音声で質問する方式を
+                基本ルールとして考えています。
+
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
+
+
+
+<!-- =========================
+     REGISTER
+========================= -->
+
+<section id="register">
+
+    <div class="title">
+
+        <h2>
+            先生として登録しませんか？
+        </h2>
+
+        <span class="en">
+            Would You Like to Become a Teacher?
+        </span>
+
+    </div>
+
+
+    <div class="panel" style="text-align:center;">
+
+        <p>
+
+            日本語を教えたい方、
+            日本の学校科目を教えたい方、
+            日本文化や趣味を伝えたい方。
+
+        </p>
+
+
+        <p>
+
+            特別な資格がなくても、
+            あなたが人に教えられる
+            知識や経験があれば歓迎します。
+
+        </p>
+
+
+        <!--
+        ↓↓↓
+        ここを先生用Google FormのURLに変更してください
+        -->
+
+        <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor""
+            target="_blank"
+            rel="noopener"
+        >
+
+            先生登録フォームへ
+
+            <br>
+
+            <small>
+                Teacher Registration Form
+            </small>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
 
 <div class="cta">
-  <h2>あなたの経験には、価値があります。</h2>
-  <p>日本で暮らしてきたからこそ知っていることを、世界の人に伝えてみませんか？</p>
-  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor">先生として参加する</a>
+
+    <h2>
+        あなたの知識を、世界へ。
+    </h2>
+
+    <span class="en">
+        Share Your Knowledge with the World.
+    </span>
+
+
+    <p>
+
+        日本を知りたい人は、
+        世界中にいます。
+
+    </p>
+
+
+    <div class="buttons">
+
+        <a
+            class="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfCuc0ztmlLyPhUiWD1V3ezt6aIgGHQkpntO4RsKh1qK6olXw/viewform?usp=publish-editor""
+            target="_blank"
+            rel="noopener"
+        >
+
+            先生として登録する
+
+        </a>
+
+    </div>
+
 </div>
 
-<footer>© Nihonowa</footer>
+
+
+<footer>
+
+    © Nihonowa
+
+</footer>
+
 
 </body>
 </html>
+
